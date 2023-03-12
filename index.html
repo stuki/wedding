@@ -19,9 +19,9 @@
       body {
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 170vh;
         width: 100vw;
-        overflow: hidden;
+        overflow-x: hidden;
       }
 
       #bg {
@@ -34,7 +34,6 @@
         filter: blur(6px);
         -webkit-filter: blur(6px);
         height: 100%;
-        width: 100%;
         transform: scale(1.1);
       }
 
@@ -44,7 +43,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -30%);
         z-index: 2;
         width: 80%;
         padding: 20px;
@@ -61,8 +60,10 @@
 
       #title {
         max-height: 11rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
-        max-width: 80vw;
+        font-family: "Helvetica", serif;
+        font-size: 4rem;
       }
 
       #signature {
@@ -89,6 +90,10 @@
         font-variant: normal;
       }
 
+      .info-list img {
+        max-width: 70vw;
+      }
+
       .spacer {
         border-top: 1px solid #ffffff80;
         min-width: 5rem;
@@ -105,7 +110,7 @@
         background: #000;
       }
 
-      @media only screen and (min-height: 700px) {
+      @media only screen and (min-height: 677px) {
         #title {
           margin-bottom: 2.5rem;
         }
@@ -116,7 +121,7 @@
         }
       }
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 899px) {
         .part {
           font-size: 2rem;
         }
@@ -131,6 +136,24 @@
 
         .info-list li {
           font-size: 1.2rem;
+        }
+
+        #text {
+          transform: translate(-50%, -35%);
+        }
+
+        .info-list img {
+          max-width: 30vw;
+        }
+
+        body {
+          height: 170vh;
+        }
+      }
+
+      @media only screen and (min-width: 1200px) {
+        .info-list img {
+          max-width: 40vw;
         }
       }
     </style>
@@ -153,6 +176,7 @@
           juoden ja tanssien yön pikkutunneille asti. <br /><br />
           Pyydämme teitä ilmoittamaan osallistumisestanne <br />
           ja mahdollisista erityisruokavalioista <br />
+          Reetalle tai Oscarille <br />
           1.5.2023 mennessä. <br />
           <br />
           Lämpimästi tervetuloa!
@@ -173,17 +197,21 @@
             >.
             <br />
             Allaolevasta kartasta näet saapumisohjeet ja pysäköntialueet.
+            <br />
+            <br />
+            <a href="kartta.jpg"><img src="kartta.jpg" /></a>
           </li>
           <li>
             <h3>Lahjat</h3>
-            Meille tärkeintä on saada lähimmäiset viettämään ikimuistoista
-            päivää kanssamme. <br />
-            Mahdolliset muistamiset toivomme häätilille FI61 1112 3500 2002 89
+            Meille tärkeintä on saada lähimmäiset <br />
+            viettämään ikimuistoista päivää kanssamme. <br />
+            Mahdolliset muistamiset toivomme häätilille
+            <span style="white-space: nowrap">FI61 1112 3500 2002 89</span>
           </li>
           <li>
             <h3>Majoittuminen</h3>
             Juhlapaikalla ei ole majoittumismahdollisuutta. <br />
-            Espoosta löytyy useampi hotellivaihtoehto, kuten esimerkiksi <br />
+            Espoosta löytyy useampi hotellivaihtoehto kuten esimerkiksi <br />
             <a
               href="https://www.sokoshotels.fi/fi/espoo/sokos-hotel-tapiola-garden"
               >Original Sokos Hotel Tapiola</a
